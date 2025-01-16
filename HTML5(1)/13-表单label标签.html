@@ -1,0 +1,32 @@
+<!-- 作用:网页中的某个标签的说明文本 -->
+<!-- 用label标签绑定文字和表单控件的关系可以增大表单控件的作用范围 -->
+
+<!-- 写法一 -->
+<!-- label标签只包含内容 不包含表单控件 -->
+<!-- 设置label标签的for属性值和表单控件的id属性值相同 -->
+
+<!-- 写法二 -->
+<!-- 使用label标签包含文字和表单控件(不需要属性) -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        表单label标签
+    </title>
+</head>
+<body>
+    性别:
+    <!-- 写法一 -->
+    <input type="radio" name="gender" id="man">
+    <label for="man">
+        男
+    </label>
+    <!-- 写法二 -->
+    <label>
+        <input type="radio" name="gender"> 女
+    </label>
+</body>
+</html>
