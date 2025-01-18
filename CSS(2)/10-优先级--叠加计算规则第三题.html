@@ -1,0 +1,47 @@
+<!-- 叠加计算:如果是复合选择器,则需要权重叠加计算 -->
+<!-- 公式:(行内样式,id选择器个数,类选择器个数,标签选择器个数)(每一级之间不存在进位) -->
+
+<!-- 规则: -->
+<!-- 从左向右依次比较选个数,同一级个数多的优先级高,如果个数相同,则向后比较 -->
+<!-- !important权重最高 -->
+<!-- 继承权重最低 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级--叠加计算规则第三题</title>
+    <style>
+        /* (0, 2, 0, 0) */
+        #father #son {
+            color: blue;
+        }
+        /* (0, 1, 1, 1) */
+        #father p.c2 {
+            color: blakc;
+        }
+        /* (0, 0, 2, 2) */
+        div.c1 p.c2 {
+            color: red;
+        }
+        /* 继承优先级最低 */
+        #father {
+            color: green;
+        }
+        /* 继承优先级最低 */
+        div#father.c1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="father" class="c1">
+        <div id="son" class="c2">
+            <p>
+                这行文本是什么颜色?
+            </p>
+        </div>
+    </div>
+</body>
+</html>

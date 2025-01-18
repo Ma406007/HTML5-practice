@@ -1,0 +1,47 @@
+<!-- 属性名:background-position(bgp) -->
+<!-- 属性值:水平方向位置 垂直方向位置 -->
+
+<!-- 关键字: -->
+<!-- left:左侧 -->
+<!-- right:右侧 -->
+<!-- center:居中 -->
+<!-- top:顶部 -->
+<!-- bottom:底部 -->
+
+<!-- 坐标:数字+px,正负都可以 -->
+
+<!-- 关键字取值方式写法可以颠倒取值顺序 -->
+<!-- 可以只写一个关键字,另一个方向默认为居中;数字只写一个值表示水平方向,垂直方向为居中 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图位置</title>
+    <style>
+        div {
+            height: 400px;
+            width: 400px;
+            background-color: pink;
+            background-image: url(./狗.png);
+            background-repeat: no-repeat;
+
+            /* 左上角 */
+            /* background-position: 0 0; */
+            /* background-position: left top; */
+
+            /* 右下角 */
+            /* background-position: right bottom; */
+
+            /* 水平:正数向右 负数向左 */
+            /* background-position: 50px 0px; */
+            /* 垂直:正数向下 负数向上 */
+            /* background-position: -50px 0px; */
+        }
+    </style>
+</head>
+<body>
+    <div>div标签</div>
+</body>
+</html>

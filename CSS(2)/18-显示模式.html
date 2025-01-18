@@ -1,0 +1,81 @@
+<!-- 显示模式:标签(元素)的显示方式 -->
+
+<!-- 块级元素: -->
+<!-- 独占一行 -->
+<!-- 宽度默认是父级的100% -->
+<!-- 添加宽高属性生效 -->
+
+<!-- 行内元素: -->
+<!-- 不会独占一行 -->
+<!-- 尺寸由内容长度决定 -->
+<!-- 添加宽高属性无效 -->
+
+<!-- 行内块元素 -->
+<!-- 不会独占一行 -->
+<!-- 尺寸由内容长度决定 -->
+<!-- 添加宽高属性生效 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式</title>
+    <style>
+        /* 块级元素 */
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .div1 {
+            background-color: brown;
+        }
+
+        .div2 {
+            background-color: orange;
+        }
+
+        /* 行内元素 */
+        span {
+            width: 200px;
+            height: 200px;
+        }
+
+        .span1 {
+            background-color: brown;
+        }
+
+        .span2 {
+            background-color: orange;
+        }
+
+        /* 行内块元素 */
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .img1 {
+            background-color: brown;
+        }
+
+        .img2 {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- 块级元素 -->
+    <div class="div1">div标签1</div>
+    <div class="div2">div标签2</div>
+
+    <!-- 行内元素 -->
+    <span class="span1">span1</span>
+    <span class="span2">span1</span>
+
+    <!-- 行内块元素 -->
+    <img src="./狗.png" alt="">
+    <img src="./狗.png" alt="">
+</body>
+</html>

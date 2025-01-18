@@ -1,0 +1,33 @@
+<!-- 复合选择器的定义:由两个或多个基础选择器通过不同方式组合而成 -->
+<!-- 作用:更准确高效地选择目标元素(标签) -->
+
+<!-- 后代选择器:选中某元素的后代元素 -->
+<!-- 写法:父选择器 子选择器{CSS属性},父子选择器之间用空格隔开 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        /* 后代选择器:选中所有后代 */
+        div span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <span>span标签</span>
+    <div>
+        <span>
+            这是div的儿子span
+        </span>
+        <p>
+            <span>
+                这是div的孙子span
+            </span>
+        </p>
+    </div>
+</body>
+</html>
