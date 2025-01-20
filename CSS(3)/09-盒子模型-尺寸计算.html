@@ -1,0 +1,36 @@
+<!-- 默认情况: -->
+<!-- 盒子尺寸=内容尺寸+border尺寸+内边距尺寸 -->
+<!-- 因此盒子加border/padding会撑大盒子 -->
+
+<!-- 解决办法: -->
+<!-- 手动做减法:减去border/padding的尺寸 -->
+<!-- 内减模式:box-sizing:border-box -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型-尺寸计算</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+
+            /* 手动减法 */
+            /* width: 160px;
+            height: 160px; */
+
+            /* 内减模式 */
+            box-sizing: border-box;
+            
+            background-color: pink;
+
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>div标签</div>
+</body>
+</html>
