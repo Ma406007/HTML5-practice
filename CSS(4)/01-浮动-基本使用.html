@@ -1,0 +1,35 @@
+<!-- 作用:让块元素水平排列 -->
+<!-- 属性名:float -->
+<!-- 属性值:left左对齐 right右对齐 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>浮动-基本使用</title>
+    <style>
+        /* 特点:顶对齐;具备行内块显示模式特点;脱标,不占用标准流的位置 */
+        .one {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+
+            float: left;
+        }
+
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /* float: left; */
+            /* float: right; */
+        }
+    </style>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+</body>
+</html>
